@@ -5,11 +5,12 @@ Implement a function named factorial that has one parameter: an integer, . It mu
 constrains
 1<= n <= 10 */
 
-const factorial = n => {
-    if (n === 1)
+const factorial = (n) => {
+    if (n === 0) {
         return 1
-    return n * factorial(n - 1)
-
+    } else {
+        return n * factorial(n - 1)
+    }
 }
 
-factorial (5)
+console.log(factorial (5))
